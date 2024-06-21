@@ -23,5 +23,5 @@ app.post("/Stues", async (req, res) => {
     res.send(ans)
 })
 
-app.use(express.static("D:/FLT"))
+app.use(express.static(__path))
 app.listen(port, () => { console.log(`listening on port${port}`); });
